@@ -11,10 +11,10 @@
             --accent-yellow: #fde047;
             --gray-100: #f3f4f6;
             --gray-300: #d1d5db;
-            --gray-500: #6b7280;
+            --gray-500: #e5e7eb;
             --gray-600: #4b5563;
             --gray-800: #1f2937;
-            --red-500: #ef4444;
+            --red-500: #b91c1c;
             --red-600: #dc2626;
             --green-600: #059669;
         }
@@ -410,8 +410,10 @@
 
                                 <div class="flex-col">
                                     <label for="full-name" class="input-label">Full Legal Name</label>
-                                    <input type="text" id="full-name" title="Required field" class="input-field" placeholder="Enter name">
-                                    <p class="mt-1 text-sm text-gray-500" tabindex="1">Required for verification.</p> 
+                                    <input type="text" id="full-name" title="Required field" class="input-field" placeholder="Enter name" aria-describedby="full-name-hint">
+                                    <p id="full-name-hint" class="mt-1 text-sm" style="color: var(--gray-600);">
+                                        Required for verification.
+                                    </p>
                                 </div>
 
                                 <div class="flex-col">
@@ -496,7 +498,7 @@
                                 </span>
                                 
                                 <button class="icon-btn" title="Edit Application">
-                                    <span style="color: #9ca3af;">&#x270E;</span> 
+                                    <span style="color: #141515;">&#x270E;</span> 
                                 </button>
                                 
                                 <button class="icon-btn-danger" 
